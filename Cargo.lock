@@ -861,6 +861,7 @@ dependencies = [
  "ethers-core",
  "ethers-providers",
  "ethers-signers",
+ "eyre",
  "futures-util",
  "hex",
  "once_cell",
