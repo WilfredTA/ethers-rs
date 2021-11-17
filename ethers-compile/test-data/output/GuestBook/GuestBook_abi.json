@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Signed",
+    "type": "event",
+    "inputs": [
+      {
+        "name": "book_msg",
+        "type": "string",
+        "indexed": false
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "name": "sign",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "book_msg",
+        "type": "string"
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "name": "get_msg",
+    "type": "function",
+    "inputs": [
+      {
+        "name": "addr",
+        "type": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "string"
+      }
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+[package]
+name = "ethers-compile"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ethers-core = { version = "^0.5.0", path = "../ethers-core", default-features = false }
+serde_json = "1.0.67"
+serde = "1.0.130"
+hex = "0.4.3"
+fe-driver = {path = "../../fe/crates/driver"}
+fe-common = {path = "../../fe/crates/common"}
+fe-parser = {path = "../../fe/crates/parser"}
+fe-yulc = {path = "../../fe/crates/yulc"}
+ethers-solc = {path = "../ethers-solc", optional = true}
+structopt = "0.3.23"
+thiserror = "1.0.30"
+[dev-dependencies]
+tempdir = "0.3.7"
+
+[features]
+fe-ir = []
+fe-full = ["ethers-solc/full"]

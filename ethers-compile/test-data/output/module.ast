@@ -1,0 +1,556 @@
+Module {
+    body: [
+        Contract(
+            Node {
+                kind: Contract {
+                    name: Node {
+                        kind: "GuestBook",
+                        id: NodeId(
+                            bdd64e57-2588-468e-98ad-ebed965941fc,
+                        ),
+                        span: 62..71,
+                    },
+                    fields: [
+                        Node {
+                            kind: Field {
+                                is_pub: false,
+                                is_const: false,
+                                name: Node {
+                                    kind: "messages",
+                                    id: NodeId(
+                                        012f9dcf-cc6d-44a5-97c3-f4b15c5293a4,
+                                    ),
+                                    span: 164..172,
+                                },
+                                typ: Node {
+                                    kind: Generic {
+                                        base: Node {
+                                            kind: "Map",
+                                            id: NodeId(
+                                                098e2b77-8d2a-4bbe-b263-21dc4e985551,
+                                            ),
+                                            span: 174..177,
+                                        },
+                                        args: Node {
+                                            kind: [
+                                                TypeDesc(
+                                                    Node {
+                                                        kind: Base {
+                                                            base: "address",
+                                                        },
+                                                        id: NodeId(
+                                                            e701344a-0764-4e42-aa4b-2284be212682,
+                                                        ),
+                                                        span: 178..185,
+                                                    },
+                                                ),
+                                                TypeDesc(
+                                                    Node {
+                                                        kind: Generic {
+                                                            base: Node {
+                                                                kind: "String",
+                                                                id: NodeId(
+                                                                    5724c926-dbef-4b3f-a47c-fa9457559fe9,
+                                                                ),
+                                                                span: 187..193,
+                                                            },
+                                                            args: Node {
+                                                                kind: [
+                                                                    Int(
+                                                                        Node {
+                                                                            kind: 100,
+                                                                            id: NodeId(
+                                                                                59a65772-e61b-4fdc-8ae0-50f3a02ba195,
+                                                                            ),
+                                                                            span: 194..197,
+                                                                        },
+                                                                    ),
+                                                                ],
+                                                                id: NodeId(
+                                                                    2ff8602c-b171-49d2-84c6-d7520d9c8486,
+                                                                ),
+                                                                span: 193..198,
+                                                            },
+                                                        },
+                                                        id: NodeId(
+                                                            274fbf34-ba9d-4720-bd66-b0928942e65d,
+                                                        ),
+                                                        span: 187..198,
+                                                    },
+                                                ),
+                                            ],
+                                            id: NodeId(
+                                                c6aa1c1c-c395-40b9-970c-8a1e53b9a92a,
+                                            ),
+                                            span: 177..199,
+                                        },
+                                    },
+                                    id: NodeId(
+                                        31248582-6fee-4c7e-809b-906332f69091,
+                                    ),
+                                    span: 174..199,
+                                },
+                                value: None,
+                            },
+                            id: NodeId(
+                                76fd0636-ce13-4c33-b871-968c3535f9e0,
+                            ),
+                            span: 164..199,
+                        },
+                    ],
+                    body: [
+                        Event(
+                            Node {
+                                kind: Event {
+                                    name: Node {
+                                        kind: "Signed",
+                                        id: NodeId(
+                                            e988eae9-3b2e-4b2f-8056-b93fe4401be5,
+                                        ),
+                                        span: 267..273,
+                                    },
+                                    fields: [
+                                        Node {
+                                            kind: EventField {
+                                                is_idx: false,
+                                                name: Node {
+                                                    kind: "book_msg",
+                                                    id: NodeId(
+                                                        11553296-3ae5-494c-abd2-558aa757bfb6,
+                                                    ),
+                                                    span: 283..291,
+                                                },
+                                                typ: Node {
+                                                    kind: Generic {
+                                                        base: Node {
+                                                            kind: "String",
+                                                            id: NodeId(
+                                                                cdba1e28-d6e0-4a77-bf0d-d68386766c06,
+                                                            ),
+                                                            span: 293..299,
+                                                        },
+                                                        args: Node {
+                                                            kind: [
+                                                                Int(
+                                                                    Node {
+                                                                        kind: 100,
+                                                                        id: NodeId(
+                                                                            a3699401-4781-46d2-98d9-30d4e6021f48,
+                                                                        ),
+                                                                        span: 300..303,
+                                                                    },
+                                                                ),
+                                                            ],
+                                                            id: NodeId(
+                                                                14200731-cfd9-452a-9c47-fdee658f8857,
+                                                            ),
+                                                            span: 299..304,
+                                                        },
+                                                    },
+                                                    id: NodeId(
+                                                        e83136e3-46bf-432d-8722-8b33372f5979,
+                                                    ),
+                                                    span: 293..304,
+                                                },
+                                            },
+                                            id: NodeId(
+                                                dc7b8339-5eaf-4cfc-be72-46ea6e94edcc,
+                                            ),
+                                            span: 283..304,
+                                        },
+                                    ],
+                                },
+                                id: NodeId(
+                                    212dd833-590a-4a72-b968-4020b881aca3,
+                                ),
+                                span: 261..304,
+                            },
+                        ),
+                        Function(
+                            Node {
+                                kind: Function {
+                                    pub_: Some(
+                                        310..313,
+                                    ),
+                                    unsafe_: None,
+                                    name: Node {
+                                        kind: "sign",
+                                        id: NodeId(
+                                            56d76012-819b-469e-8aee-d9a4937d0264,
+                                        ),
+                                        span: 317..321,
+                                    },
+                                    args: [
+                                        Node {
+                                            kind: Zelf,
+                                            id: NodeId(
+                                                75bb8c18-f326-4b24-ad49-5ea083c28f82,
+                                            ),
+                                            span: 322..326,
+                                        },
+                                        Node {
+                                            kind: Regular(
+                                                RegularFunctionArg {
+                                                    name: Node {
+                                                        kind: "book_msg",
+                                                        id: NodeId(
+                                                            affc220d-634b-43d9-9796-5150be71d607,
+                                                        ),
+                                                        span: 328..336,
+                                                    },
+                                                    typ: Node {
+                                                        kind: Generic {
+                                                            base: Node {
+                                                                kind: "String",
+                                                                id: NodeId(
+                                                                    d588dc74-b61d-4129-a381-94a505e2aa17,
+                                                                ),
+                                                                span: 338..344,
+                                                            },
+                                                            args: Node {
+                                                                kind: [
+                                                                    Int(
+                                                                        Node {
+                                                                            kind: 100,
+                                                                            id: NodeId(
+                                                                                842c96a3-a993-4aa2-b851-12a6e0d51a1b,
+                                                                            ),
+                                                                            span: 345..348,
+                                                                        },
+                                                                    ),
+                                                                ],
+                                                                id: NodeId(
+                                                                    35f740b3-83b2-4ad1-94f1-103b2ce59f7f,
+                                                                ),
+                                                                span: 344..349,
+                                                            },
+                                                        },
+                                                        id: NodeId(
+                                                            e837a522-7cc4-4364-8e1f-cb3dcd053b51,
+                                                        ),
+                                                        span: 338..349,
+                                                    },
+                                                },
+                                            ),
+                                            id: NodeId(
+                                                5ba47d2b-c4a2-49f9-92ae-cee1be8745f8,
+                                            ),
+                                            span: 328..349,
+                                        },
+                                    ],
+                                    return_type: None,
+                                    body: [
+                                        Node {
+                                            kind: Assign {
+                                                target: Node {
+                                                    kind: Subscript {
+                                                        value: Node {
+                                                            kind: Attribute {
+                                                                value: Node {
+                                                                    kind: Name(
+                                                                        "self",
+                                                                    ),
+                                                                    id: NodeId(
+                                                                        369bd553-ca12-4549-a7a6-4eee20299530,
+                                                                    ),
+                                                                    span: 425..429,
+                                                                },
+                                                                attr: Node {
+                                                                    kind: "messages",
+                                                                    id: NodeId(
+                                                                        5dca6d2b-29ac-471d-9731-971d37e3885e,
+                                                                    ),
+                                                                    span: 430..438,
+                                                                },
+                                                            },
+                                                            id: NodeId(
+                                                                4d2fb043-a4fe-4173-9868-664032a9ce0c,
+                                                            ),
+                                                            span: 425..438,
+                                                        },
+                                                        index: Node {
+                                                            kind: Attribute {
+                                                                value: Node {
+                                                                    kind: Name(
+                                                                        "msg",
+                                                                    ),
+                                                                    id: NodeId(
+                                                                        feb72ca3-2bc2-4b48-a320-84344d15545c,
+                                                                    ),
+                                                                    span: 439..442,
+                                                                },
+                                                                attr: Node {
+                                                                    kind: "sender",
+                                                                    id: NodeId(
+                                                                        5641380e-8e1c-4e85-880a-8fdadbfc1b8f,
+                                                                    ),
+                                                                    span: 443..449,
+                                                                },
+                                                            },
+                                                            id: NodeId(
+                                                                1ff13ec6-a64f-481e-965d-a1cf33d07a20,
+                                                            ),
+                                                            span: 439..449,
+                                                        },
+                                                    },
+                                                    id: NodeId(
+                                                        4d295de9-f375-44b6-a1a4-a0197d5f367f,
+                                                    ),
+                                                    span: 425..450,
+                                                },
+                                                value: Node {
+                                                    kind: Name(
+                                                        "book_msg",
+                                                    ),
+                                                    id: NodeId(
+                                                        15c937d2-c1d9-415b-b77e-418afd8fbc0f,
+                                                    ),
+                                                    span: 453..461,
+                                                },
+                                            },
+                                            id: NodeId(
+                                                a996614e-aaa2-41d6-86e7-5faacafe987b,
+                                            ),
+                                            span: 425..461,
+                                        },
+                                        Node {
+                                            kind: Emit {
+                                                name: Node {
+                                                    kind: "Signed",
+                                                    id: NodeId(
+                                                        7d3f73bf-9494-4d05-889d-fb51ecab74a1,
+                                                    ),
+                                                    span: 510..516,
+                                                },
+                                                args: Node {
+                                                    kind: [
+                                                        Node {
+                                                            kind: CallArg {
+                                                                label: Some(
+                                                                    Node {
+                                                                        kind: "book_msg",
+                                                                        id: NodeId(
+                                                                            d8bfd536-886a-441c-ab94-6dd4afca6465,
+                                                                        ),
+                                                                        span: 517..525,
+                                                                    },
+                                                                ),
+                                                                value: Node {
+                                                                    kind: Name(
+                                                                        "book_msg",
+                                                                    ),
+                                                                    id: NodeId(
+                                                                        0c2f0046-294f-4c83-8edc-fb267850f016,
+                                                                    ),
+                                                                    span: 526..534,
+                                                                },
+                                                            },
+                                                            id: NodeId(
+                                                                4364dff2-fbf5-4c54-9467-fbe1746c757c,
+                                                            ),
+                                                            span: 517..534,
+                                                        },
+                                                    ],
+                                                    id: NodeId(
+                                                        95e9e3cb-d399-4ce7-bbe3-fdf0f813f052,
+                                                    ),
+                                                    span: 516..535,
+                                                },
+                                            },
+                                            id: NodeId(
+                                                1f8f8bdf-92ee-4d9f-a25c-626c55e0fee0,
+                                            ),
+                                            span: 505..535,
+                                        },
+                                    ],
+                                },
+                                id: NodeId(
+                                    40afe42b-3971-44fd-895a-66499479ef96,
+                                ),
+                                span: 310..535,
+                            },
+                        ),
+                        Function(
+                            Node {
+                                kind: Function {
+                                    pub_: Some(
+                                        541..544,
+                                    ),
+                                    unsafe_: None,
+                                    name: Node {
+                                        kind: "get_msg",
+                                        id: NodeId(
+                                            63b8b3ea-539b-4117-9e57-267331ca7016,
+                                        ),
+                                        span: 548..555,
+                                    },
+                                    args: [
+                                        Node {
+                                            kind: Zelf,
+                                            id: NodeId(
+                                                7f9caed2-6f2b-415d-8473-2305804c284c,
+                                            ),
+                                            span: 556..560,
+                                        },
+                                        Node {
+                                            kind: Regular(
+                                                RegularFunctionArg {
+                                                    name: Node {
+                                                        kind: "addr",
+                                                        id: NodeId(
+                                                            589f3aaf-812c-4525-890c-c47ee3b86cbf,
+                                                        ),
+                                                        span: 562..566,
+                                                    },
+                                                    typ: Node {
+                                                        kind: Base {
+                                                            base: "address",
+                                                        },
+                                                        id: NodeId(
+                                                            76e98815-9021-43cb-b99a-058a197de896,
+                                                        ),
+                                                        span: 568..575,
+                                                    },
+                                                },
+                                            ),
+                                            id: NodeId(
+                                                3514bf67-3018-49cb-9b4f-2f5ab370799b,
+                                            ),
+                                            span: 562..575,
+                                        },
+                                    ],
+                                    return_type: Some(
+                                        Node {
+                                            kind: Generic {
+                                                base: Node {
+                                                    kind: "String",
+                                                    id: NodeId(
+                                                        7616cedf-cd8d-4306-b495-c8725eb8ee6f,
+                                                    ),
+                                                    span: 580..586,
+                                                },
+                                                args: Node {
+                                                    kind: [
+                                                        Int(
+                                                            Node {
+                                                                kind: 100,
+                                                                id: NodeId(
+                                                                    aabd5494-dc7d-47b8-a82e-6452337235b2,
+                                                                ),
+                                                                span: 587..590,
+                                                            },
+                                                        ),
+                                                    ],
+                                                    id: NodeId(
+                                                        c0db859a-53a8-4062-a18a-b661d4eed22f,
+                                                    ),
+                                                    span: 586..591,
+                                                },
+                                            },
+                                            id: NodeId(
+                                                ccbaeb86-7572-4b54-a364-9c3b017e2e03,
+                                            ),
+                                            span: 580..591,
+                                        },
+                                    ),
+                                    body: [
+                                        Node {
+                                            kind: Return {
+                                                value: Some(
+                                                    Node {
+                                                        kind: Call {
+                                                            func: Node {
+                                                                kind: Attribute {
+                                                                    value: Node {
+                                                                        kind: Subscript {
+                                                                            value: Node {
+                                                                                kind: Attribute {
+                                                                                    value: Node {
+                                                                                        kind: Name(
+                                                                                            "self",
+                                                                                        ),
+                                                                                        id: NodeId(
+                                                                                            0847044c-5da7-43c5-9894-ecdda7305818,
+                                                                                        ),
+                                                                                        span: 705..709,
+                                                                                    },
+                                                                                    attr: Node {
+                                                                                        kind: "messages",
+                                                                                        id: NodeId(
+                                                                                            21a9053a-fb9e-4c52-8a43-c6f2db4849bb,
+                                                                                        ),
+                                                                                        span: 710..718,
+                                                                                    },
+                                                                                },
+                                                                                id: NodeId(
+                                                                                    c6db0d55-0713-492d-806a-da4a1fc11d37,
+                                                                                ),
+                                                                                span: 705..718,
+                                                                            },
+                                                                            index: Node {
+                                                                                kind: Name(
+                                                                                    "addr",
+                                                                                ),
+                                                                                id: NodeId(
+                                                                                    c09eeaab-c3f1-4e04-bd4c-bbd934f7ce5c,
+                                                                                ),
+                                                                                span: 719..723,
+                                                                            },
+                                                                        },
+                                                                        id: NodeId(
+                                                                            7772c1df-713a-4b77-9536-69f8fbf91204,
+                                                                        ),
+                                                                        span: 705..724,
+                                                                    },
+                                                                    attr: Node {
+                                                                        kind: "to_mem",
+                                                                        id: NodeId(
+                                                                            71ccf2e4-7c69-414f-a0b0-2aea2433e762,
+                                                                        ),
+                                                                        span: 725..731,
+                                                                    },
+                                                                },
+                                                                id: NodeId(
+                                                                    b7933b67-f2c8-44de-a32b-e27cf9f94024,
+                                                                ),
+                                                                span: 705..731,
+                                                            },
+                                                            generic_args: None,
+                                                            args: Node {
+                                                                kind: [],
+                                                                id: NodeId(
+                                                                    8c57c51b-ba59-4005-ad8a-ba1ca678e4c1,
+                                                                ),
+                                                                span: 731..733,
+                                                            },
+                                                        },
+                                                        id: NodeId(
+                                                            88dd39ae-94fb-4791-935f-2056934f901d,
+                                                        ),
+                                                        span: 705..733,
+                                                    },
+                                                ),
+                                            },
+                                            id: NodeId(
+                                                6b0b3128-391b-47a7-a93a-a3c1fe4b3238,
+                                            ),
+                                            span: 698..733,
+                                        },
+                                    ],
+                                },
+                                id: NodeId(
+                                    ec40f223-fc09-46c6-a996-d7fb166d7187,
+                                ),
+                                span: 541..733,
+                            },
+                        ),
+                    ],
+                },
+                id: NodeId(
+                    739ea05e-e8c3-49bd-90ac-05407c68ca27,
+                ),
+                span: 53..733,
+            },
+        ),
+    ],
+}
