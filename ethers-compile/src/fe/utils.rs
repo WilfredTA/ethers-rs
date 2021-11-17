@@ -10,6 +10,7 @@ use serde::{Serialize, Deserialize};
 
 #[cfg(feature = "fe-full")]
 use ethers_solc::{CompilerInput, artifacts::{Source, Settings}};
+#[cfg(feature = "fe-full")]
 use ethers_solc::artifacts::Sources;
 
 

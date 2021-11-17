@@ -985,7 +985,6 @@ dependencies = [
  "fe-common",
  "fe-driver",
  "fe-parser",
- "fe-yulc",
  "hex",
  "serde",
  "serde_json",
@@ -1231,6 +1230,7 @@ checksum = "e88a8acf291dafb59c2d96e8f59828f3838bb1a70398823ade51a84de6a6deed"
 [[package]]
 name = "fe-abi"
 version = "0.10.0-alpha"
+source = "git+https://github.com/WilfredTA/fe?branch=feat/ethers-compat#2a203788ecb6a6a8b92ffef28d4b7568b6222854"
 dependencies = [
  "fe-analyzer",
  "fe-common",
@@ -1242,6 +1242,7 @@ dependencies = [
 [[package]]
 name = "fe-analyzer"
 version = "0.10.0-alpha"
+source = "git+https://github.com/WilfredTA/fe?branch=feat/ethers-compat#2a203788ecb6a6a8b92ffef28d4b7568b6222854"
 dependencies = [
  "fe-common",
  "fe-parser",
@@ -1261,6 +1262,7 @@ dependencies = [
 [[package]]
 name = "fe-common"
 version = "0.10.0-alpha"
+source = "git+https://github.com/WilfredTA/fe?branch=feat/ethers-compat#2a203788ecb6a6a8b92ffef28d4b7568b6222854"
 dependencies = [
  "codespan-reporting",
  "difference",
@@ -1275,6 +1277,7 @@ dependencies = [
 [[package]]
 name = "fe-driver"
 version = "0.10.0-alpha"
+source = "git+https://github.com/WilfredTA/fe?branch=feat/ethers-compat#2a203788ecb6a6a8b92ffef28d4b7568b6222854"
 dependencies = [
  "fe-abi",
  "fe-analyzer",
@@ -1288,6 +1291,7 @@ dependencies = [
 [[package]]
 name = "fe-lowering"
 version = "0.10.0-alpha"
+source = "git+https://github.com/WilfredTA/fe?branch=feat/ethers-compat#2a203788ecb6a6a8b92ffef28d4b7568b6222854"
 dependencies = [
  "fe-analyzer",
  "fe-common",
@@ -1298,6 +1302,7 @@ dependencies = [
 [[package]]
 name = "fe-parser"
 version = "0.10.0-alpha"
+source = "git+https://github.com/WilfredTA/fe?branch=feat/ethers-compat#2a203788ecb6a6a8b92ffef28d4b7568b6222854"
 dependencies = [
  "fe-common",
  "if_chain",
@@ -1312,16 +1317,9 @@ dependencies = [
 ]
 
 [[package]]
-name = "fe-yulc"
-version = "0.10.0-alpha"
-dependencies = [
- "fe-yulgen",
- "serde_json",
-]
-
-[[package]]
 name = "fe-yulgen"
 version = "0.10.0-alpha"
+source = "git+https://github.com/WilfredTA/fe?branch=feat/ethers-compat#2a203788ecb6a6a8b92ffef28d4b7568b6222854"
 dependencies = [
  "fe-abi",
  "fe-analyzer",
