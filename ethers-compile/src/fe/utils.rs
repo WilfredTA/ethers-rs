@@ -8,9 +8,9 @@ use crate::fe::error::{Result, FeError};
 use fe_driver::{CompiledContract, CompiledModule};
 use serde::{Serialize, Deserialize};
 
-#[cfg(feature = "fe-full")]
+#[cfg(any(feature = "fe-full", feature = "test"))]
 use ethers_solc::{CompilerInput, artifacts::{Source, Settings}};
-#[cfg(feature = "fe-full")]
+#[cfg(any(feature = "fe-full", feature = "test"))]
 use ethers_solc::artifacts::Sources;
 
 
@@ -21,7 +21,7 @@ pub fn write_module(
     bins: Option<HashMap<String, String>>,
 ) -> Result<()> {
     let out_dir = out_dir.as_ref();
-    if out_dir.is_file() {
+    if out_dir.is_file() && !_overwrite {
         return Err(FeError::fe(
             format!(
                 "A file exists at path `{}`, the location of the output directory. Refusing to overwrite.",
@@ -46,7 +46,7 @@ pub fn write_module(
 
     }
 
-    #[cfg(feature = "fe-full")]
+    #[cfg(any(feature = "fe-full", feature = "test"))]
     if bins.is_some() {
         for (name, bytecode) in bins.unwrap().drain() {
             let contract_out_dir = out_dir.join(&name);
@@ -69,7 +69,7 @@ pub fn write_output(path: &Path, write_contents: &str) -> Result<()> {
     Ok(())
 }
 
-#[cfg(feature = "fe-full")]
+#[cfg(any(feature = "fe-full", feature = "test"))]
 pub fn compile_yul_contracts(contracts: HashMap<String, CompiledContract>, optimize: bool) -> Result<HashMap<String, String>> {
     let mut compiled = HashMap::new();
     for (name, contract) in contracts {
@@ -79,34 +79,13 @@ pub fn compile_yul_contracts(contracts: HashMap<String, CompiledContract>, optim
 
     Ok(compiled)
 }
-//
-// #[derive(Debug, Clone, Serialize, Deserialize)]
-// struct ContentSource {
-//     content: String
-// }
-// #[derive(Debug, Clone, Serialize, Deserialize)]
-// struct OptimizerSettings {
-//     enabled: bool
-// }
-// #[derive(Debug, Clone, Serialize, Deserialize)]
-// struct Settings {
-//     optimizer: OptimizerSettings,
-//     #[serde(rename = "camelCase")]
-//     output_selection: ,
-// }
-// #[derive(Debug, Clone, Serialize, Deserialize)]
-// pub struct SolcYulJsonFile {
-//     language: String,
-//     sources: HashMap<String, ContentSource>,
-//     settings: Settings
-// }
 
-#[cfg(feature = "fe-full")]
+#[cfg(any(feature = "fe-full", feature="test"))]
 pub fn compile_single_yul_contract(contract: CompiledContract, _optimize: bool) -> Result<String> {
 
     let mut sources = Sources::default();
     let yul_src = Source {
-        content: contract.yul.clone()
+        content: contract.yul.clone().as_str().replace("\\", "")
     };
     let yul_src_path = Path::new("input.yul").to_path_buf();
     sources.insert(yul_src_path, yul_src);
@@ -114,6 +93,7 @@ pub fn compile_single_yul_contract(contract: CompiledContract, _optimize: bool) 
     solc_input.language = "Yul".to_string();
     solc_input.settings.optimizer.enabled = Some(false);
 
+    
 
     let solc_output = ethers_solc::Solc::default().compile(&solc_input)?;
     println!("SOLC OUTPUT: {:?}", solc_output);

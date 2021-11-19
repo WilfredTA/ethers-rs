@@ -6,7 +6,7 @@ Module {
                     name: Node {
                         kind: "GuestBook",
                         id: NodeId(
-                            bdd64e57-2588-468e-98ad-ebed965941fc,
+                            b32e9b5a-9a5a-4ff8-b6b3-16406ffe97ec,
                         ),
                         span: 62..71,
                     },
@@ -18,7 +18,7 @@ Module {
                                 name: Node {
                                     kind: "messages",
                                     id: NodeId(
-                                        012f9dcf-cc6d-44a5-97c3-f4b15c5293a4,
+                                        7ce63f48-646a-438d-98fa-3934ddde85f1,
                                     ),
                                     span: 164..172,
                                 },
@@ -27,7 +27,7 @@ Module {
                                         base: Node {
                                             kind: "Map",
                                             id: NodeId(
-                                                098e2b77-8d2a-4bbe-b263-21dc4e985551,
+                                                229e954d-cb22-44b7-bbf4-6652a648c89a,
                                             ),
                                             span: 174..177,
                                         },
@@ -39,7 +39,7 @@ Module {
                                                             base: "address",
                                                         },
                                                         id: NodeId(
-                                                            e701344a-0764-4e42-aa4b-2284be212682,
+                                                            4902517e-0fbb-441a-9540-2b6739451f4a,
                                                         ),
                                                         span: 178..185,
                                                     },
@@ -50,7 +50,7 @@ Module {
                                                             base: Node {
                                                                 kind: "String",
                                                                 id: NodeId(
-                                                                    5724c926-dbef-4b3f-a47c-fa9457559fe9,
+                                                                    1612abd1-bee6-4c49-af6c-19c85045f248,
                                                                 ),
                                                                 span: 187..193,
                                                             },
@@ -60,40 +60,40 @@ Module {
                                                                         Node {
                                                                             kind: 100,
                                                                             id: NodeId(
-                                                                                59a65772-e61b-4fdc-8ae0-50f3a02ba195,
+                                                                                8aa25d1d-5b8f-48e7-b355-6761fe89b24c,
                                                                             ),
                                                                             span: 194..197,
                                                                         },
                                                                     ),
                                                                 ],
                                                                 id: NodeId(
-                                                                    2ff8602c-b171-49d2-84c6-d7520d9c8486,
+                                                                    04304f47-9735-4ef5-b4e6-da357feb381b,
                                                                 ),
                                                                 span: 193..198,
                                                             },
                                                         },
                                                         id: NodeId(
-                                                            274fbf34-ba9d-4720-bd66-b0928942e65d,
+                                                            4a08ec3a-5783-4ffb-b3fc-2dbea907f60f,
                                                         ),
                                                         span: 187..198,
                                                     },
                                                 ),
                                             ],
                                             id: NodeId(
-                                                c6aa1c1c-c395-40b9-970c-8a1e53b9a92a,
+                                                257719b2-7458-4386-8471-64d7a7c7d03d,
                                             ),
                                             span: 177..199,
                                         },
                                     },
                                     id: NodeId(
-                                        31248582-6fee-4c7e-809b-906332f69091,
+                                        b08d03ba-6daf-455c-97d0-1fcfd4846f04,
                                     ),
                                     span: 174..199,
                                 },
                                 value: None,
                             },
                             id: NodeId(
-                                76fd0636-ce13-4c33-b871-968c3535f9e0,
+                                5fbd883c-8263-4def-91f8-13b9162946d2,
                             ),
                             span: 164..199,
                         },
@@ -105,7 +105,7 @@ Module {
                                     name: Node {
                                         kind: "Signed",
                                         id: NodeId(
-                                            e988eae9-3b2e-4b2f-8056-b93fe4401be5,
+                                            b1601e92-2d56-48ff-9a71-a34db3cf63e2,
                                         ),
                                         span: 267..273,
                                     },
@@ -116,7 +116,7 @@ Module {
                                                 name: Node {
                                                     kind: "book_msg",
                                                     id: NodeId(
-                                                        11553296-3ae5-494c-abd2-558aa757bfb6,
+                                                        2f842afd-a6f5-4f15-a726-4be2f5eb1c9a,
                                                     ),
                                                     span: 283..291,
                                                 },
@@ -125,7 +125,7 @@ Module {
                                                         base: Node {
                                                             kind: "String",
                                                             id: NodeId(
-                                                                cdba1e28-d6e0-4a77-bf0d-d68386766c06,
+                                                                fae3eb23-cbf7-4e15-8923-d6fd87ebc002,
                                                             ),
                                                             span: 293..299,
                                                         },
@@ -135,33 +135,33 @@ Module {
                                                                     Node {
                                                                         kind: 100,
                                                                         id: NodeId(
-                                                                            a3699401-4781-46d2-98d9-30d4e6021f48,
+                                                                            90ecf735-e63f-403b-a2e0-b706d78bd57f,
                                                                         ),
                                                                         span: 300..303,
                                                                     },
                                                                 ),
                                                             ],
                                                             id: NodeId(
-                                                                14200731-cfd9-452a-9c47-fdee658f8857,
+                                                                17276bcb-4842-43fd-a8d5-936b07ab32da,
                                                             ),
                                                             span: 299..304,
                                                         },
                                                     },
                                                     id: NodeId(
-                                                        e83136e3-46bf-432d-8722-8b33372f5979,
+                                                        c51f06ea-3627-41fe-ba32-048c427f6567,
                                                     ),
                                                     span: 293..304,
                                                 },
                                             },
                                             id: NodeId(
-                                                dc7b8339-5eaf-4cfc-be72-46ea6e94edcc,
+                                                3a61529b-47e7-4d99-8524-6db185c79f61,
                                             ),
                                             span: 283..304,
                                         },
                                     ],
                                 },
                                 id: NodeId(
-                                    212dd833-590a-4a72-b968-4020b881aca3,
+                                    cbcd40fa-5f58-4377-89ad-180916d0ee23,
                                 ),
                                 span: 261..304,
                             },
@@ -176,7 +176,7 @@ Module {
                                     name: Node {
                                         kind: "sign",
                                         id: NodeId(
-                                            56d76012-819b-469e-8aee-d9a4937d0264,
+                                            5c867d52-b143-43ac-a24d-acb35faa6587,
                                         ),
                                         span: 317..321,
                                     },
@@ -184,7 +184,7 @@ Module {
                                         Node {
                                             kind: Zelf,
                                             id: NodeId(
-                                                75bb8c18-f326-4b24-ad49-5ea083c28f82,
+                                                0b06d61e-e3b9-4a1a-9621-52a3d7fae124,
                                             ),
                                             span: 322..326,
                                         },
@@ -194,7 +194,7 @@ Module {
                                                     name: Node {
                                                         kind: "book_msg",
                                                         id: NodeId(
-                                                            affc220d-634b-43d9-9796-5150be71d607,
+                                                            c10367d0-85ed-441f-9ca2-8afb2e414355,
                                                         ),
                                                         span: 328..336,
                                                     },
@@ -203,7 +203,7 @@ Module {
                                                             base: Node {
                                                                 kind: "String",
                                                                 id: NodeId(
-                                                                    d588dc74-b61d-4129-a381-94a505e2aa17,
+                                                                    230fe635-58e8-40f7-9adb-905d51cceada,
                                                                 ),
                                                                 span: 338..344,
                                                             },
@@ -213,27 +213,27 @@ Module {
                                                                         Node {
                                                                             kind: 100,
                                                                             id: NodeId(
-                                                                                842c96a3-a993-4aa2-b851-12a6e0d51a1b,
+                                                                                703ae8fc-47fc-4b80-9615-9bfd2f7e7221,
                                                                             ),
                                                                             span: 345..348,
                                                                         },
                                                                     ),
                                                                 ],
                                                                 id: NodeId(
-                                                                    35f740b3-83b2-4ad1-94f1-103b2ce59f7f,
+                                                                    03be04a0-848c-456d-bfca-08f3c3799499,
                                                                 ),
                                                                 span: 344..349,
                                                             },
                                                         },
                                                         id: NodeId(
-                                                            e837a522-7cc4-4364-8e1f-cb3dcd053b51,
+                                                            05274adb-7c34-4fca-a3fb-3ddcc917b2e8,
                                                         ),
                                                         span: 338..349,
                                                     },
                                                 },
                                             ),
                                             id: NodeId(
-                                                5ba47d2b-c4a2-49f9-92ae-cee1be8745f8,
+                                                1b603bb7-bb7c-4f18-960e-138c5fa59418,
                                             ),
                                             span: 328..349,
                                         },
@@ -251,20 +251,20 @@ Module {
                                                                         "self",
                                                                     ),
                                                                     id: NodeId(
-                                                                        369bd553-ca12-4549-a7a6-4eee20299530,
+                                                                        b76f4903-b18c-4564-8c6f-c2d3101779ac,
                                                                     ),
                                                                     span: 425..429,
                                                                 },
                                                                 attr: Node {
                                                                     kind: "messages",
                                                                     id: NodeId(
-                                                                        5dca6d2b-29ac-471d-9731-971d37e3885e,
+                                                                        1d2beaf8-ce72-4653-883b-8bd8c7d59fb6,
                                                                     ),
                                                                     span: 430..438,
                                                                 },
                                                             },
                                                             id: NodeId(
-                                                                4d2fb043-a4fe-4173-9868-664032a9ce0c,
+                                                                54f3e3fa-2fcb-42d3-965d-4a9826aa36f8,
                                                             ),
                                                             span: 425..438,
                                                         },
@@ -275,26 +275,26 @@ Module {
                                                                         "msg",
                                                                     ),
                                                                     id: NodeId(
-                                                                        feb72ca3-2bc2-4b48-a320-84344d15545c,
+                                                                        5e8d26f5-af38-4797-a20f-ed8c34f02a06,
                                                                     ),
                                                                     span: 439..442,
                                                                 },
                                                                 attr: Node {
                                                                     kind: "sender",
                                                                     id: NodeId(
-                                                                        5641380e-8e1c-4e85-880a-8fdadbfc1b8f,
+                                                                        a703e5f0-ce27-4ca5-a69b-3dd2d196f886,
                                                                     ),
                                                                     span: 443..449,
                                                                 },
                                                             },
                                                             id: NodeId(
-                                                                1ff13ec6-a64f-481e-965d-a1cf33d07a20,
+                                                                f45dee71-8aad-4703-b398-23ea6355435f,
                                                             ),
                                                             span: 439..449,
                                                         },
                                                     },
                                                     id: NodeId(
-                                                        4d295de9-f375-44b6-a1a4-a0197d5f367f,
+                                                        6f25ebf0-94de-4714-9da7-c98a59745dec,
                                                     ),
                                                     span: 425..450,
                                                 },
@@ -303,13 +303,13 @@ Module {
                                                         "book_msg",
                                                     ),
                                                     id: NodeId(
-                                                        15c937d2-c1d9-415b-b77e-418afd8fbc0f,
+                                                        ebdc8e12-6d75-445f-b14e-5e0c0340c649,
                                                     ),
                                                     span: 453..461,
                                                 },
                                             },
                                             id: NodeId(
-                                                a996614e-aaa2-41d6-86e7-5faacafe987b,
+                                                57b1a33d-27d9-43e2-b3c3-032452e596cd,
                                             ),
                                             span: 425..461,
                                         },
@@ -318,7 +318,7 @@ Module {
                                                 name: Node {
                                                     kind: "Signed",
                                                     id: NodeId(
-                                                        7d3f73bf-9494-4d05-889d-fb51ecab74a1,
+                                                        ae3eb274-3104-45af-b6b2-3438f298e75f,
                                                     ),
                                                     span: 510..516,
                                                 },
@@ -330,7 +330,7 @@ Module {
                                                                     Node {
                                                                         kind: "book_msg",
                                                                         id: NodeId(
-                                                                            d8bfd536-886a-441c-ab94-6dd4afca6465,
+                                                                            3c7a3820-2c1c-4021-823b-77b3254f2107,
                                                                         ),
                                                                         span: 517..525,
                                                                     },
@@ -340,32 +340,32 @@ Module {
                                                                         "book_msg",
                                                                     ),
                                                                     id: NodeId(
-                                                                        0c2f0046-294f-4c83-8edc-fb267850f016,
+                                                                        bd77da58-1d9f-4196-bcc1-8270bbdb3496,
                                                                     ),
                                                                     span: 526..534,
                                                                 },
                                                             },
                                                             id: NodeId(
-                                                                4364dff2-fbf5-4c54-9467-fbe1746c757c,
+                                                                c7a9956c-4f8f-4d2c-a1a0-60bdd5302651,
                                                             ),
                                                             span: 517..534,
                                                         },
                                                     ],
                                                     id: NodeId(
-                                                        95e9e3cb-d399-4ce7-bbe3-fdf0f813f052,
+                                                        6ba6eaa8-e97f-495a-adc5-4e37614a1f58,
                                                     ),
                                                     span: 516..535,
                                                 },
                                             },
                                             id: NodeId(
-                                                1f8f8bdf-92ee-4d9f-a25c-626c55e0fee0,
+                                                7253f696-f79f-4a3b-9a56-513761780b9d,
                                             ),
                                             span: 505..535,
                                         },
                                     ],
                                 },
                                 id: NodeId(
-                                    40afe42b-3971-44fd-895a-66499479ef96,
+                                    5e03b2cc-ccef-4677-9a18-362d6e110545,
                                 ),
                                 span: 310..535,
                             },
@@ -380,7 +380,7 @@ Module {
                                     name: Node {
                                         kind: "get_msg",
                                         id: NodeId(
-                                            63b8b3ea-539b-4117-9e57-267331ca7016,
+                                            ba91f4fa-4461-4a04-9eda-ad49567152d3,
                                         ),
                                         span: 548..555,
                                     },
@@ -388,7 +388,7 @@ Module {
                                         Node {
                                             kind: Zelf,
                                             id: NodeId(
-                                                7f9caed2-6f2b-415d-8473-2305804c284c,
+                                                c703d133-11a3-4b40-bbbb-15e1d2a15020,
                                             ),
                                             span: 556..560,
                                         },
@@ -398,7 +398,7 @@ Module {
                                                     name: Node {
                                                         kind: "addr",
                                                         id: NodeId(
-                                                            589f3aaf-812c-4525-890c-c47ee3b86cbf,
+                                                            e6e71598-3a7c-4093-b0bd-fe19786354f0,
                                                         ),
                                                         span: 562..566,
                                                     },
@@ -407,14 +407,14 @@ Module {
                                                             base: "address",
                                                         },
                                                         id: NodeId(
-                                                            76e98815-9021-43cb-b99a-058a197de896,
+                                                            7db75717-d599-4bf4-92f5-9ee08c60c6fa,
                                                         ),
                                                         span: 568..575,
                                                     },
                                                 },
                                             ),
                                             id: NodeId(
-                                                3514bf67-3018-49cb-9b4f-2f5ab370799b,
+                                                0dc4a550-a356-4ac8-b423-84f5bd8e2bdc,
                                             ),
                                             span: 562..575,
                                         },
@@ -425,7 +425,7 @@ Module {
                                                 base: Node {
                                                     kind: "String",
                                                     id: NodeId(
-                                                        7616cedf-cd8d-4306-b495-c8725eb8ee6f,
+                                                        e2195063-5040-46a9-a615-2df1363d8c5a,
                                                     ),
                                                     span: 580..586,
                                                 },
@@ -435,20 +435,20 @@ Module {
                                                             Node {
                                                                 kind: 100,
                                                                 id: NodeId(
-                                                                    aabd5494-dc7d-47b8-a82e-6452337235b2,
+                                                                    10de1d37-d545-426e-9b57-c7bf4cf7eb32,
                                                                 ),
                                                                 span: 587..590,
                                                             },
                                                         ),
                                                     ],
                                                     id: NodeId(
-                                                        c0db859a-53a8-4062-a18a-b661d4eed22f,
+                                                        9e73c2b2-885e-4519-8df4-566b54982d81,
                                                     ),
                                                     span: 586..591,
                                                 },
                                             },
                                             id: NodeId(
-                                                ccbaeb86-7572-4b54-a364-9c3b017e2e03,
+                                                cdb5b3d6-bd82-4c83-aa8e-c9532fba0545,
                                             ),
                                             span: 580..591,
                                         },
@@ -470,20 +470,20 @@ Module {
                                                                                             "self",
                                                                                         ),
                                                                                         id: NodeId(
-                                                                                            0847044c-5da7-43c5-9894-ecdda7305818,
+                                                                                            5c19fc4e-9ea4-47e8-a5a2-ced8ff930557,
                                                                                         ),
                                                                                         span: 705..709,
                                                                                     },
                                                                                     attr: Node {
                                                                                         kind: "messages",
                                                                                         id: NodeId(
-                                                                                            21a9053a-fb9e-4c52-8a43-c6f2db4849bb,
+                                                                                            98f4b8cc-521b-4854-b546-75ce767f9eb5,
                                                                                         ),
                                                                                         span: 710..718,
                                                                                     },
                                                                                 },
                                                                                 id: NodeId(
-                                                                                    c6db0d55-0713-492d-806a-da4a1fc11d37,
+                                                                                    119bcf01-6056-4454-808f-c13ff50e2af6,
                                                                                 ),
                                                                                 span: 705..718,
                                                                             },
@@ -492,26 +492,26 @@ Module {
                                                                                     "addr",
                                                                                 ),
                                                                                 id: NodeId(
-                                                                                    c09eeaab-c3f1-4e04-bd4c-bbd934f7ce5c,
+                                                                                    d1cc1889-e8e2-4589-a8b0-0c0bf6b14d06,
                                                                                 ),
                                                                                 span: 719..723,
                                                                             },
                                                                         },
                                                                         id: NodeId(
-                                                                            7772c1df-713a-4b77-9536-69f8fbf91204,
+                                                                            3d903c47-5150-4d47-a6d5-dcdcc92bdbf1,
                                                                         ),
                                                                         span: 705..724,
                                                                     },
                                                                     attr: Node {
                                                                         kind: "to_mem",
                                                                         id: NodeId(
-                                                                            71ccf2e4-7c69-414f-a0b0-2aea2433e762,
+                                                                            2faf9d6d-c192-4c66-9cfa-5fd7219bc683,
                                                                         ),
                                                                         span: 725..731,
                                                                     },
                                                                 },
                                                                 id: NodeId(
-                                                                    b7933b67-f2c8-44de-a32b-e27cf9f94024,
+                                                                    f3761471-a0ef-4be8-ae2c-84dfd82dc09b,
                                                                 ),
                                                                 span: 705..731,
                                                             },
@@ -519,27 +519,27 @@ Module {
                                                             args: Node {
                                                                 kind: [],
                                                                 id: NodeId(
-                                                                    8c57c51b-ba59-4005-ad8a-ba1ca678e4c1,
+                                                                    22ca428d-7461-45ed-b95a-35b3db9a59d8,
                                                                 ),
                                                                 span: 731..733,
                                                             },
                                                         },
                                                         id: NodeId(
-                                                            88dd39ae-94fb-4791-935f-2056934f901d,
+                                                            d9679ffa-dd30-401c-a154-02bbe6b12062,
                                                         ),
                                                         span: 705..733,
                                                     },
                                                 ),
                                             },
                                             id: NodeId(
-                                                6b0b3128-391b-47a7-a93a-a3c1fe4b3238,
+                                                4121d11b-322c-4587-a00a-0e2dea6079b1,
                                             ),
                                             span: 698..733,
                                         },
                                     ],
                                 },
                                 id: NodeId(
-                                    ec40f223-fc09-46c6-a996-d7fb166d7187,
+                                    b6e2d5bb-f3be-43b5-bdc7-8d60ef19ea67,
                                 ),
                                 span: 541..733,
                             },
@@ -547,7 +547,7 @@ Module {
                     ],
                 },
                 id: NodeId(
-                    739ea05e-e8c3-49bd-90ac-05407c68ca27,
+                    ba88bf60-079c-454e-990e-d54c389bd4b8,
                 ),
                 span: 53..733,
             },

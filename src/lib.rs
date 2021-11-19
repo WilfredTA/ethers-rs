@@ -89,7 +89,7 @@ pub use ethers_middleware as middleware;
 pub use ethers_providers as providers;
 pub use ethers_signers as signers;
 pub use ethers_solc as solc;
-
+pub use ethers_compile as compile;
 // Re-export ethers_core::utils/types/abi
 // We hide these docs so that the rustdoc links send the visitor
 // to the corresponding crate, instead of the re-export
@@ -109,4 +109,5 @@ pub mod prelude {
     pub use ethers_providers::*;
     pub use ethers_signers::*;
     pub use ethers_solc::*;
+    pub use ethers_compile::*;
 }

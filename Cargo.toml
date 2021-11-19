@@ -81,6 +81,7 @@ solc-full = ["ethers-solc/full"]
 solc-tests = ["ethers-solc/tests"]
 fe-ir = ["ethers-compile/fe-ir"]
 fe-full = ["ethers-compile/fe-full"]
+solc = ["ethers-compile/solc-full"]
 
 
 [dependencies]

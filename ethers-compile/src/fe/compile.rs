@@ -18,7 +18,7 @@ pub struct Fethers {
 
 
 impl Fethers {
-    pub fn compile(&mut self) -> Result<&mut Self> {
+    pub fn compile(&mut self) -> Result<CompiledModule> {
         if self.config.input_file.is_none() {
             return Err(
                 FeError::NoContracts("Please specify a contract to compile".to_string())
@@ -30,7 +30,7 @@ impl Fethers {
         let (file_content, file_id) = files.load_file(self.config.input_file.as_ref().unwrap().to_str().unwrap())?;
 
 
-        let module = compile(&files, file_id, &file_content, false, false);
+        let module = compile(&files, file_id, &file_content, false, self.config.flags.optimize);
         let mut module = match module {
             Ok(m) => m,
             Err(e) => {
@@ -49,10 +49,10 @@ impl Fethers {
         }
 
         if self.config.out_dir.is_some() {
-            write_module(self.config.out_dir.as_ref().unwrap(), &mut module, true, None)?;
+            write_module(self.config.out_dir.as_ref().unwrap(), &mut module, self.config.flags.overwrite, None)?;
         }
 
-        self.module = Some(module);
-        Ok(self)
+        //self.module = Some(module);
+        Ok(module)
     }
 }

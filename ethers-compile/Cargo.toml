@@ -6,14 +6,15 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-ethers-core = { version = "^0.5.0", path = "../ethers-core", default-features = false }
+ethers-core = { path = "../ethers-core"}
 serde_json = "1.0.67"
 serde = "1.0.130"
 hex = "0.4.3"
 fe-common = {git = "https://github.com/WilfredTA/fe", branch = "feat/ethers-compat"}
 fe-driver = {git = "https://github.com/WilfredTA/fe", branch = "feat/ethers-compat"}
 fe-parser = {git = "https://github.com/WilfredTA/fe", branch = "feat/ethers-compat"}
-ethers-solc = {path = "../ethers-solc", optional = true}
+ethers-solc = {path = "../ethers-solc", default-features = false, optional = true }
+
 structopt = "0.3.23"
 thiserror = "1.0.30"
 [dev-dependencies]
@@ -22,3 +23,6 @@ tempdir = "0.3.7"
 [features]
 fe-ir = []
 fe-full = ["ethers-solc/full"]
+solc-full = ["ethers-solc/full"]
+solc-async = ["ethers-solc/async"]
+test = ["fe-full", "solc-full"]
